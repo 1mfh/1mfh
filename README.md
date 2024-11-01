@@ -21,3 +21,49 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Glow</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a2e;
+  }
+
+  .energy-button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #6a0dad;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.6), 0 0 30px rgba(138, 43, 226, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.6), 0 0 30px rgba(138, 43, 226, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(138, 43, 226, 1), 0 0 30px rgba(138, 43, 226, 0.9), 0 0 40px rgba(138, 43, 226, 0.8);
+    }
+  }
+</style>
+</head>
+<body>
+
+<button class="energy-button">Magic Pulse</button>
+
+</body>
+</html>
